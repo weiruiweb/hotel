@@ -1,0 +1,155 @@
+<!--index.wxml-->
+<view class="banner">
+    <image src="/images/banner.png"></image>
+</view>
+<view class="p40" id="album">
+  <view class="address flexRowBetween">
+  	<view class="address_left">
+	  	<view class="address_list">
+	  		地址: 地址地址地址地址地址地址
+	  	</view>
+	  	<view class="address_list">
+	  		商圈: 地址地址地址地址地址地址
+	  	</view>
+	  	<view class="address_list">
+	  		电话: 1888888888
+	  	</view>
+	</view>
+	<view class="address_right">
+	<view class="phone">
+		<image src="/images/phone.png"></image>
+	</view>
+	</view>
+  </view>
+</view>
+<view class="house_time">
+	<view class="p40 flexRowBetween">
+		<view class="house_left flex">
+			<view class="text1">入住 <text>09-19</text></view>
+			<view class="text1">离店 <text>09-20</text></view>
+		</view>
+		<view class="house_right">
+			共1晚
+		</view>
+	</view>
+</view>
+<view class="house_time flexRowBetween">
+	<view class="p40 flexRowBetween">
+		<view class="select flexRowCenter" data-id="0" bindtap="select">
+			<image src="{{is_select == 0?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+			大床房
+		</view>
+		<view class="select flexRowCenter"  data-id="1" bindtap="select">
+			<image src="{{is_select == 1?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+			大床房
+		</view>
+		<view class="select flexRowCenter"  data-id="2" bindtap="select">
+			<image src="{{is_select == 2?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+			大床房
+		</view>
+		<view class="select flexRowCenter" data-id="3" bindtap="select">
+			<image src="{{is_select == 3?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
+			大床房
+		</view>
+	</view>
+</view>
+<view class="p40">
+	<view class="house_list"  data-path="/pages/houseDetail/houseDetail">
+		<view class="house_img">
+			<image src="/images/banner.png"></image>
+		</view>
+		<view class="w710">
+			<view class="house_detail flexRowBetween" style="border-bottom:solid 1px #e0e0e0;">
+				<view class="text">名称名称名称名称名称</view>
+				<view class="text" style="font-size:26rpx; text-align: right;">VIP价最低至:2000</view>
+			</view>
+			<view class="house_detail flexRowBetween">
+				<view class="text">9-19</view>
+				<view class="text" style="font-size:26rpx; text-align: right;">剩余2间</view>
+			</view>
+		</view>
+	</view>
+	<view class="house_list" bindtap="intoPath"  data-path="/pages/houseDetail/houseDetail">
+		<view class="house_img">
+			<image src="/images/banner.png"></image>
+		</view>
+		<view class="w710">
+			<view class="house_detail flexRowBetween" style="border-bottom:solid 1px #e0e0e0;">
+				<view class="text">名称名称名称名称名称</view>
+				<view class="text" style="font-size:26rpx; text-align: right;">VIP价最低至:2000</view>
+			</view>
+			<view class="house_detail flexRowBetween">
+				<view class="text">9-19</view>
+				<view class="text" style="font-size:26rpx; text-align: right;">剩余2间</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="house_show">
+	<view class="house_detail " id="close">
+		<view class="p40 flexRowBetween" style="line-height: 76rpx;">
+			<view class="text" style="color:#fff;font-size:30rpx;">名称名称名称名称名称</view>
+			<image src="/images/close.png"></image>
+		</view>
+	</view>
+	<view class="banner1">
+	    <image src="/images/banner.png"></image>
+	</view>
+	<view class="condition">
+		<view class="p40 flex" style="height: 72rpx;">
+			<view class="condition_item">
+				<image src="/images/house1.png"></image>
+				Wi-Fi
+			</view>
+			<view class="condition_item">
+				<image src="/images/house2.png"></image>
+				Wi-Fi
+			</view>
+			<view class="condition_item">
+				<image src="/images/house3.png"></image>
+				Wi-Fi
+			</view>
+			<view class="condition_item">
+				<image src="/images/house4.png"></image>
+				Wi-Fi
+			</view>
+		</view>
+	</view>
+	<view class="p40">
+		<view class="condition_list" bindtap="intoPath"  data-path="/pages/houseDetail/houseDetail">
+			<view class="w710 ">
+				<view class="condition_line flexRowBetween">
+					<view class="condition_img"><image src="/images/house5.png"></image></view>
+					<view class="condition_deatil flexRowBetween" style="width:82%;">
+						<view class="text">名称名名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称</view>
+					</view>
+				</view>
+				<view class="condition_line flexRowBetween">
+					<view class="condition_img"><image src="/images/house5.png"></image></view>
+					<view class="condition_deatil flexRowBetween" style="width:82%;">
+						<view class="text">名称名名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称</view>
+					</view>
+				</view>
+				<view class="condition_line flexRowBetween">
+					<view class="condition_img"><image src="/images/house5.png"></image></view>
+					<view class="condition_deatil flexRowBetween" style="width:82%;">
+						<view class="text">名称名名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view style="height:110rpx;width:100%;"></view>
+	<view class="confirm flexRowBetween">
+		<view class="p40 flexRowBetween">
+			<view class="confirm_left">
+				合计：¥321
+			</view>
+			<view class="confirm_right" bindtap="intoPath"  data-path="/pages/houseOrder/houseOrder">
+				<view class="submit_btn">立即预订</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
