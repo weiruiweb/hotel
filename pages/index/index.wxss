@@ -48,9 +48,10 @@ view{
 	margin:0 12rpx;
 }
 .address_item1{
-	width:48%;
+	width:44%;
 	font-size:30rpx;
 	height:100%;
+	padding:0 2%;
 }
 .address_item2{
 	width:20%;
@@ -192,4 +193,15 @@ view{
 .kefu image{
 	width:150rpx;
 	height:150rpx;
+}
+.address .address_icon{
+	width:18%;
+	text-align:center;
+}
+.address .address_icon image{
+	margin:0 auto;
+}
+.address .city{
+	width:64%;
+	text-align:center;
 }

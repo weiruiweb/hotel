@@ -7,14 +7,14 @@
         <view class="index_top">
           <view class="index_address flexRowBetween">
               <view class="address address_item flexRowCenter">
-                  <view><image src="/images/index_icon1.png"></image></view>
-                  <view class="city">西安市</view>
-                  <view><image src="/images/up_down.png"></image></view>
+                  <view class="address_icon"><image src="/images/index_icon1.png"></image></view>
+                  <view class="city avoidOverflow">西安市</view>
+                  <view  class="address_icon"><image src="/images/up_down.png"></image></view>
               </view>
               <view class="address address_item1 flexRowCenter">
-                  <view><image src="/images/index_icon2.png"></image></view>
-                  <view class="city">钟楼东大街店</view>
-                  <view><image src="/images/up_down.png"></image></view>
+                  <view  class="address_icon"><image src="/images/index_icon2.png"></image></view>
+                  <view class="city avoidOverflow">钟楼东大街店</view>
+                  <view  class="address_icon"><image src="/images/up_down.png"></image></view>
               </view>
               <view class="address_item2 flexRowBetween">
                 <view class="location">
