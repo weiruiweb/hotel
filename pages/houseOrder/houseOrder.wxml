@@ -30,7 +30,7 @@
    <view class="input_list flexRowBetween"  bindtap="goBuy">
    		<view class="input_before">优惠券</view>
    		<view class="house_input flexRowBetween">
-   			<input></input>
+   			<view></view>
    			<image src="/images/next_page.jpg"></image>
    		</view>
    </view>
@@ -62,22 +62,23 @@
 		<view class="select_tlt">
 			选择优惠券
 		</view>
-		<view class="select_list flexRowBetween">
+		<view class="select_list flexRowBetween" data-id="0" bindtap="select_discount">
 			<view class="select_left">50元优惠卷:满500减50</view>
 			<view class="select_right">
-				<image src="/images/select.jpg"></image>
+				<image src="{{is_discount == 0?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
 			</view>
 		</view>
-		<view class="select_list flexRowBetween">
+		<view class="select_list flexRowBetween" data-id="1" bindtap="select_discount">
 			<view class="select_left">50元优惠卷:满500减50</view>
 			<view class="select_right">
-				<image src="/images/select.jpg"></image>
+				<image src="{{is_discount == 1?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
 			</view>
 		</view>
-		<view class="select_list flexRowBetween">
+
+		<view class="select_list flexRowBetween" data-id="2" bindtap="select_discount">
 			<view class="select_left">50元优惠卷:满500减50</view>
 			<view class="select_right">
-				<image src="/images/select.jpg"></image>
+				<image src="{{is_discount == 2?'/images/select_a.jpg':'/images/select.jpg'}}"></image>
 			</view>
 		</view>
 

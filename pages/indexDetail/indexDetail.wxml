@@ -54,7 +54,7 @@
 	</view>
 </view>
 <view class="p40">
-	<view class="house_list"  data-path="/pages/houseDetail/houseDetail">
+	<view class="house_list"  bindtap="show">
 		<view class="house_img">
 			<image src="/images/banner.png"></image>
 		</view>
@@ -69,7 +69,7 @@
 			</view>
 		</view>
 	</view>
-	<view class="house_list" bindtap="intoPath"  data-path="/pages/houseDetail/houseDetail">
+	<view class="house_list"  bindtap="show">
 		<view class="house_img">
 			<image src="/images/banner.png"></image>
 		</view>
@@ -85,8 +85,9 @@
 		</view>
 	</view>
 </view>
-<view class="house_show">
-	<view class="house_detail " id="close">
+<view class="{{isShow?'mask':''}}"></view>
+<view class="house_show {{isShow?'sildeIn':'slideOut'}}" >
+	<view class="house_detail " id="close" bindtap="close">
 		<view class="p40 flexRowBetween" style="line-height: 76rpx;">
 			<view class="text" style="color:#fff;font-size:30rpx;">名称名称名称名称名称</view>
 			<image src="/images/close.png"></image>

@@ -7,6 +7,7 @@ Page({
   data: {
     is_select:0,
     isShow:false,
+    is_discount:0,
   },
   //事件处理函数
   select:function(e){
@@ -15,6 +16,13 @@ Page({
       is_select:current
     })
   },
+  select_discount:function(e){
+     var current = e.currentTarget.dataset.id;
+    this.setData({
+      is_discount:current
+    })
+  },
+  
   goBuy:function(){
     var isShow = !this.data.isShow;
     this.setData({
